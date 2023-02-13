@@ -8,7 +8,10 @@ public class Auto extends Jarmu {
     }
     
     public void kereketCserel() {
-    
+        int szam = (int)(Math.random() * 4) + 1;
+        
+        if(szam == 1) defekt = true;
+        else defekt = false;
     }
     
     public boolean halad() {

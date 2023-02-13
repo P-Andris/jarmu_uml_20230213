@@ -10,18 +10,23 @@ public abstract class Jarmu {
     }
     
     public void beindit() {
-    
+        beinditva = true;
     }
     
     public void leallit() {
-    
+        beinditva = false;
     }
     
     public boolean tankol() {
-        return true;
+        if(beinditva) leallit();
+        if(uzemanyag != true) uzemanyag = true;
+        
+        return uzemanyag;
     }
     
     public boolean halad() {
-        return true;
+        if(!beinditva) beindit();
+        
+        return beinditva;
     }
 }
