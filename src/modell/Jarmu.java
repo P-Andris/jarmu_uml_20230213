@@ -29,4 +29,16 @@ public abstract class Jarmu {
         
         return beinditva;
     }
+
+    public boolean isBeinditva() {
+        return beinditva;
+    }
+
+    public boolean isUzemanyag() {
+        return uzemanyag;
+    }
+
+    public boolean isMegerkezett() {
+        return megerkezett;
+    }
 }

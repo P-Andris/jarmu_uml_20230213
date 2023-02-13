@@ -13,8 +13,13 @@ public class Auto extends Jarmu {
         if(szam == 1) defekt = true;
         else defekt = false;
     }
-    
+
+    @Override
     public boolean halad() {
         return true;
+    }
+
+    public boolean isDefekt() {
+        return defekt;
     }
 }
